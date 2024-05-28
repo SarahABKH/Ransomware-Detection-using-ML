@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection of Ransomware Using Machine Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://signal.avg.com/hs-fs/hubfs/Blog_Content/Avg/Signal/AVG%20Signal%20Images/what_is_ransomware_signal_2nd_redresh/ransomware-04.png?width=1320&height=601&name=ransomware-04.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .title {
+            margin-bottom: 20px;
+        }
+
+        .title h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .description p {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .upload-form input[type="file"] {
+            display: none;
+        }
+
+        .upload-form label {
+            background-color: #3366ff;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .upload-form label:hover {
+            background-color: #003366;
+        }
+
+        .upload-form button {
+            background-color: #3366ff;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .upload-form button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Detection of Ransomware Using Machine Learning</h1>
+        </div>
+        <div class="description">
+            <p>By Group GB16</p>
+            <p>Upload a file to check whether it is ransomware</p>
+        </div>
+        <div class="upload-form">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="fileInput" accept=".exe">
+                <label for="fileInput">Choose File</label>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
